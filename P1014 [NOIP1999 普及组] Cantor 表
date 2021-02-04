@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+	long n = 0;
+	int i = 0,j= 0;
+	scanf("%ld",&n);
+	for(;j<n;)	i++,j+=i;
+	if(i%2==0)	printf("%d/%d",i+n-j,j-n+1);
+	else	printf("%d/%d",j-n+1,i+n-j);
+}
