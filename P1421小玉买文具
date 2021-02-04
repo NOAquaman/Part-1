@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+	int p,q,n;
+	scanf("%d %d",&p,&q);
+	n=(p*10+q)/19;
+	printf("%d\n",n);
+} 
