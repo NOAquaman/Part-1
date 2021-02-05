@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+	int a[100] = {};
+	int l = 0;
+	for(;l<100;l++)
+	{
+		cin >> a[l];
+		if(a[l] == 0)	break;
+	}
+	for(;l>=0;l--)
+	{
+		if(a[l]!=0)		cout << a[l] << " ";
+	}
+} 
