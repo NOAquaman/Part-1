@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+	bool tree[10001] = {false};
+	int l = 0,m = 0,u = 0,v = 0;
+	cin >> l >> m;
+	for(int i = 0;l >= i;i++)
+	{
+		tree[i] = true;
+	}
+	for(int i = 0;i < m;i++)
+	{
+		cin >> u >> v;
+		for(;u<=v;u++)
+		{
+			if(tree[u] == true)
+			{
+				tree[u] = false;
+				l--;
+			}
+		} 
+		
+	}
+	cout << l+1;
+} 
